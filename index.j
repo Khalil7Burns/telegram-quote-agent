@@ -1,4 +1,4 @@
-// Telegram Daily Quote Agent
+u// Telegram Daily Quote Agent
 // Deployment: Railway.app
 // Bot Token: 8834123524:AAEbkbkCma7ytq7uyw-FsNwvEYBvOn4Lftw
 
@@ -7,7 +7,8 @@ const cron = require('node-cron');
 
 // Get from environment variables (set in Railway)
 const token = process.env.TELEGRAM_TOKEN || '8834123524:AAEbkbkCma7ytq7uyw-FsNwvEYBvOn4Lftw';
-let CHAT_ID = process.env.CHAT_ID;
+let let CHAT_ID = null;
+
 
 // Initialize bot
 const bot = new TelegramBot(token, { polling: true });
